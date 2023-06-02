@@ -86,6 +86,9 @@ from bs4 import BeautifulSoup
 
 from urllib.parse import unquote
 
+
+
+
 def get_arabic_wikipedia_link(query):
     # Send a GET request to the Google search results page
     response = requests.get(f"https://www.google.com/search?q={query}&hl=ar")
