@@ -178,6 +178,20 @@ if input_value:
     json_object = create_json_object(wikipedia_url,Summary)
     st.json(json.loads(json_object))  # Parse JSON object for display
 
+    
+
+url = "http:// hala.pythonanywhere.com"
+params = {"input": "zzz"}
+
+response = requests.post(url, params=params)
+
+if response.status_code == 200:
+    print("POST request successful!")
+    data = response.json()  # Assuming the response contains the requested data
+    print(data)
+else:
+    print("POST request failed with status code:", response.status_code)
+
     # Display the summary
 #     st.write("Summary:"+Summary)
 #     st.write(wikipedia_url)
