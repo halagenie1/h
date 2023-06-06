@@ -180,7 +180,7 @@ if input_value:
 
     
 
-url = "http://hala.pythonanywhere.com"
+url = "http://hala.pythonanywhere.com/example"
 params = {"input": "zzz"}
 
 response = requests.post(url, params=params)
