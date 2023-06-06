@@ -180,7 +180,7 @@ if input_value:
 
     
 
-url = "http:// hala.pythonanywhere.com"
+url = "http://hala.pythonanywhere.com"
 params = {"input": "zzz"}
 
 response = requests.post(url, params=params)
@@ -192,7 +192,7 @@ if response.status_code == 200:
 else:
     print("POST request failed with status code:", response.status_code)
 
-    # Display the summary
+# Display the summary
 #     st.write("Summary:"+Summary)
 #     st.write(wikipedia_url)
 # # Use the input value
